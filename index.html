@@ -10,10 +10,11 @@
   <script>
     tailwind.config = {
       theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
+        screens: {
+          sm: '600px',
+          md: '800px',
+          lg: '1280px',
+          xl: '1400px',
         }
       }
     }
@@ -24,13 +25,21 @@
 
 <body>
 
-  <section class="p-8 bg-gradient-to-b from-blue-200 to-white">
-    <header class="flex sm:">
-      <h1 class="text-3xl sm:text-3xl font-bold  ">
-        Aetherfield
-      </h1>
-      <img src="img/mas.svg" alt="mas" class="w-[20px] sm:w-[30px] ml-auto  mr-[20px]">
+  <section class="p-8 bg-gradient-to-b from-blue-200 to-white ">
+    <header class="flex items-center justify-between max-w-7xl mx-auto px-4">
+      <h1 class="text-2xl font-bold">Aetherfield</h1>
+      <img src="img/mas.svg" alt="menu" class="w-6 sm:w-8 md:hidden">
+      <div class="flex sm:hidden md:block ">
+        <nav class="">
+          <a class="font-bold pl-2" href="#">Product</a>
+          <a class="font-bold pl-2" href="#">Journal</a>
+          <a class="font-bold pl-2" href="#">About</a>
+          <a class="font-bold pl-2" href="#">Careers</a>
+          <a class="font-bold pl-2" href="https://www.figma.com/es-es/sites/">Get Started-></a>
+        </nav>
+      </div>
     </header>
+
 
     <section class="sm:mt-[100px] justify-center items-center flex flex-col gap-4">
       <h1 class="sm:text-4xl text-center">Sustainability insights,</h1>
@@ -38,14 +47,19 @@
       <p class="sm:text-center mt-[40px] mx-[10px] text-2xl">Track impact, reduce emissions, and accelerate
         progress—with
         clarity and confidence.</p>
-      <div class="sm:flex flex-col gap-2 items-center">
-        <button class="sm:p-[20px] mt-[30px] bg-black text-white text-center w-[200px]">Request a demo</button>
-        <button class="sm:p-[20px] bg-black text-white text-center w-[250px]">Explore the plataform</button>
+      <div class="flex flex-col mt-8 md:flex-row gap-2 items-center">
+        <button class="p-5 bg-black text-white w-[200px]">
+          Request a demo
+        </button>
+        <button class="p-5 bg-black text-white w-[250px]">
+          Explore the platform
+        </button>
       </div>
-      <div class="sm:w-[500px] h-[350px] border-2 border-black rounded-2xl mt-[50px] bg-white p-[10px]">
+      <div
+        class="border-2 border-black rounded-2xl mt-[50px] bg-white p-[10px] sm:w-[500px] h-[350px] md:w-[700px] md:h-[450px]">
         <h4 class="sm: font-bold">Godd morning, Acme Inc</h4>
         <h4 class="sm: text-gray-600">Your daily impact metrics are ready to review.</h4>
-        <div class="sm:flex mt-[20px]">
+        <div class="sm:flex mt-[20px] md:ml-[20px] md:gap-[160px]">
           <div class="sm:flex ">
             <div>
               <p class="sm: text-xs">192,000 tCOe</p>
@@ -73,9 +87,9 @@
 
       <h1 class="sm:text-4xl text-center mt-[50px]">Everything you need to measure, model, and act on sustainability
       </h1>
-      <img class="sm: mt-[30px] w-[500px]" src="img/img.svg" alt="fondoazul">
+      <img class="sm: mt-[30px] w-[500px] md:w-[700px]" src="img/img.svg" alt="fondoazul">
 
-      <div class="sm: ml-[20px] mt-[90px] w-[500px] border-t-2 border-b-2 border-gray-400 py-[20px]">
+      <div class="sm: ml-[20px] mt-[90px] w-[500px] md:w-[700px] border-t-2 border-b-2 border-gray-400 py-[20px]">
         <div class="sm: flex justify-between">
           <h2 class="sm:text-2xl font-bold">Track</h2>
           <h2 class="sm:text-2xl text-gray-500">001</h2>
@@ -83,7 +97,7 @@
 
         <h3 class="sm:text-2xl">Emissions, energy, and waste across your value chain</h3>
       </div>
-      <div class="sm: ml-[20px] mt-[10px] w-[500px]  border-b-2 border-gray-400 py-[20px]">
+      <div class="sm: ml-[20px] mt-[10px] w-[500px] md:w-[700px]  border-b-2 border-gray-400 py-[20px]">
         <div class="sm: flex justify-between">
           <h2 class="sm:text-2xl font-bold">Model</h2>
           <h2 class="sm:text-2xl text-gray-500">002</h2>
@@ -91,7 +105,7 @@
 
         <h3 class="sm:text-2xl">Forecast performance and goal alignment</h3>
       </div>
-      <div class="ml-[20px] mt-[10px] w-[500px]  border-b-2 border-gray-400 py-[20px]">
+      <div class="ml-[20px] mt-[10px] w-[500px] md:w-[700px] border-b-2 border-gray-400 py-[20px]">
         <div class="sm: flex justify-between">
           <h2 class="sm:text-2xl font-bold">Report</h2>
           <h2 class="sm:text-2xl text-gray-500">003</h2>
@@ -99,7 +113,7 @@
 
         <h3 class="sm:text-2xl">Generate ESG disclosures, automate frameworks</h3>
       </div>
-      <div class="sm: ml-[20px] mt-[10px] w-[500px]  border-b-2 border-gray-400 py-[20px]">
+      <div class="sm: ml-[20px] mt-[10px] w-[500px] md:w-[700px] border-b-2 border-gray-400 py-[20px]">
         <div class="sm: flex justify-between">
           <h2 class="sm:text-2xl font-bold">Act</h2>
           <h2 class="sm:text-2xl text-gray-500">004</h2>
@@ -107,7 +121,8 @@
 
         <h3 class="sm:text-2xl">Surface insights and operational next steps</h3>
       </div>
-      <button class="sm: w-[500px] h-[70px] mt-[30px] text-2xl text-center bg-black text-white font-bold">Explore
+      <button
+        class="sm: w-[500px] md:w-[700px] h-[70px] mt-[30px] text-2xl text-center bg-black text-white font-bold">Explore
         features</button>
 
     </section>
@@ -115,85 +130,136 @@
 
 
 
-  <section class="bg-amber-50 ">
-    <h1 class="sm:text-4xl text-center mt-[50px] pt-[50px]">Built for clarity</h1>
-    <h1 class="sm:text-4xl text-center">Designed for action</h1>
+  <section class="bg-amber-50 justify-center items-center flex flex-col gap-4">
+    <h1 class="text-4xl md:text-6xl text-center mt-[50px] pt-[50px]">Built for clarity</h1>
+    <h1 class="text-4xl md:text-6xl text-center">Designed for action</h1>
 
-    <div class="sm:w-[500px] h-[350px] bg-white rounded-2 ml-[90px] p-[50px] rounded-2xl mt-[30px]">
+    <div class="sm:w-[500px] md:w-[750px] h-[350px] bg-white rounded-2 ml-[50px] p-[50px] rounded-2xl mt-[30px]">
       <img class="sm: p-[10px] w-[100px]" src="img/icono1.svg" alt="icono 1">
       <h3 class="sm: p-[10px] text-2xl font-bold">Clarity drives action</h3>
-      <h3 class="sm: p-[10px] text-2xl">We believe better decisions start with better data—measured, visible, and trusted.</h3>
+      <h3 class="sm: p-[10px] text-2xl md:text-1xl">We believe better decisions start with better data—measured,
+        visible, and
+        trusted.</h3>
 
     </div>
-    <div class="sm: w-[500px] h-[400px] bg-white rounded-2 ml-[90px] p-[50px] rounded-2xl mt-[30px]">
+    <div class="sm:w-[500px] md:w-[750px] h-[350px] bg-white rounded-2 ml-[50px] p-[50px] rounded-2xl mt-[30px]">
       <img class="sm: p-[10px] w-[100px]" src="img/icono2.svg" alt="icono 1">
       <h3 class="sm: p-[10px] text-2xl font-bold">Sustainability is a systems problem</h3>
-      <h3 class="sm: p-[10px] text-2xl">We build tools that help teams connect the dots between operations, impact, and accountability.</h3>
+      <h3 class="sm: p-[10px] text-2xl">We build tools that help teams connect the dots between operations, impact, and
+        accountability.</h3>
 
     </div>
-    <div class="sm: w-[500px] h-[350px] bg-white rounded-2 ml-[90px] p-[50px] rounded-2xl mt-[30px] ">
+    <div class="sm:w-[500px] md:w-[750px] h-[350px] bg-white rounded-2 ml-[50px] p-[50px] rounded-2xl mt-[30px]">
       <img class="sm: p-[10px] w-[100px]" src="img/icono3.svg" alt="icono 1">
       <h3 class="sm: p-[10px] text-2xl font-bold">Progress over perfection</h3>
-      <h3 class="sm: p-[10px] text-2xl">We support real-world momentum—helping organizations move from ambition to measurable change.</h3>
+      <h3 class="sm: p-[10px] text-2xl">We support real-world momentum—helping organizations move from ambition to
+        measurable change.</h3>
 
     </div>
 
   </section>
 
-  <section class="sm: mt-[50px]">
-    <div class="sm: w-[400px]  bg-gray-300 ml-[120px] rounded-2xl p-[30px]">
-        <img class=" w-[1500px]" src="img/imgSection3.svg" alt="imgSection3">
+  <section class="sm: mt-[50px] justify-center items-center flex flex-col gap-4">
+    <div class="sm: w-[400px] md:w-[750px] md:flex bg-gray-300   rounded-2xl p-[30px]">
+      <img class=" sm:w-[1500px] md:w-[800px] md:h-[200px]" src="img/imgSection3.svg" alt="imgSection3">
+      <div class="md:pl-[20px]">
         <h3 class="sm: p-[10px] text-1xl font-bold">Why Acme Inc chose Aetherfield</h3>
-        <h3 class="sm: p-[10px] text-1xl">With fragmented data and growing reporting pressure, Acme turned to Aetherfield to streamline their ESG workflows. The result? Faster decisions, fewer spreadsheets, and 34% more coverage.</h3>
-        <button class="sm: w-[350px] h-[40px] mt-[30px] text-1xl text-center bg-black text-white font-bold">Read case study</button>
+        <h3 class="sm: p-[10px] text-1xl">With fragmented data and growing reporting pressure, Acme turned to
+          Aetherfield
+          to streamline their ESG workflows. The result? Faster decisions, fewer spreadsheets, and 34% more coverage.
+        </h3>
+        <button
+          class="sm: w-[350px] md:w-[300px] h-[40px] mt-[30px] text-1xl text-center bg-black text-white font-bold">Read
+          case
+          study</button>
+      </div>
+
     </div>
   </section>
 
-  <section class="sm: mt-[50px]">
-      <h3 class="sm: p-[10px] text-2xl font-bold text-center">From the journal</h3>
-      <div class="sm: w-[400px]  ml-[120px] p-[30px] border-t-2 border-gray-400 mt-[30px]">
-        <img src="img/imgSection4.svg" alt="imgSection4">
+  <section class="sm: mt-[50px] justify-center items-center flex flex-col gap-4">
+    <h3 class="sm: p-[10px] text-2xl font-bold text-center">From the journal</h3>
+    <div class="sm: w-[400px] md:w-[750px] p-[30px] border-t-2 border-gray-400 mt-[30px] md:flex">
+      <img src="img/imgSection4.svg" alt="imgSection4">
+      <div>
         <h3 class="sm: p-[10px] text-xl font-bold">How to Build a Climate-Ready Data Stack</h3>
-        <h3 class="sm: p-[10px] text-1xl text-gray-400">Insights  4 min</h3>
+        <h3 class="sm: p-[10px] text-1xl text-gray-400">Insights 4 min</h3>
       </div>
-      <div class="sm: w-[400px]  ml-[120px] p-[30px] border-t-2 border-gray-400 mt-[30px]">
-        <img src="img/imgSection4.2.svg" alt="imgSection4">
-        <h3 class="sm: p-[10px] text-xl font-bold">Sustainability Isn’t a Side Project: Making Impact Operationa</h3>
-        <h3 class="sm: p-[10px] text-1xl text-gray-400">Strategy  7 min</h3>
-      </div>
-      <div class="sm: w-[400px]  ml-[120px] p-[30px] border-t-2 border-gray-400 mt-[30px]">
-        <img src="img/imgSection4.3.svg" alt="imgSection4">
-        <h3 class="sm: p-[10px] text-xl font-bold">Inside the Aetherfield Model: How We Turn Data Into Action</h3>
-        <h3 class="sm: p-[10px] text-1xl text-gray-400">Insights  5 min</h3>
-      </div>
-      <button class="sm: w-[350px] h-[40px] mt-[30px] m-[150px] text-1xl text-center bg-black text-white font-bold">View all articles</button>
 
-  </section>
-
-  <section>
-    <img class="sm: ml-[70px] w-[500px]" src="img/imgSectin5.svg" alt="imgSectin5">
-    <img class="sm: ml-[70px] mt-[30px] w-[50px]" src="img/iconoSection5.svg" alt="iconoSection5">
-    <h3 class="sm: p-[10px] ml-[70px] w-[500px] text-3xl font-bold">We finally moved past spreadsheets and guesswork. Now we have real data to guide real decisions.</h3>
-    <h3 class="sm: p-[10px] ml-[70px] w-[500px] text-2xl font-bold">Elliot Williams</h3>
-    <h3 class="sm: p-[10px] ml-[70px] text-2xl text-gray-500">Head of Sustainability, Flux Materials</h3>
-  </section>
-
-  <section class="bg-gray-200">
-    <h3 class="sm: p-[10px] mt-[50px] ml-[70px] w-[500px] text-3xl font-bold text-center">Ready to operationalize your sustainability goals?</h3>
-    <button class="sm: w-[250px] h-[70px] mt-[30px] mb-[50px] mx-[190px] text-1xl text-center bg-black text-white font-bold">Request a demo</button>
-  </section>
-
-  <footer class="bg-amber-400 opacity-70">
-    <div class="flex ">
-      <h3 class="sm: p-[10px] ml-[40px] text-2xl font-bold">Product</h3>
-      <h3 class="sm: p-[10px] ml-[40px] text-2xl font-bold">Journa</h3>
-      <h3 class="sm: p-[10px] ml-[40px] text-2xl font-bold">About</h3>
-      <h3 class="sm: p-[10px] ml-[40px] text-2xl font-bold">Careers</h3>
     </div>
-    <h3 class="sm: p-[10px] ml-[250px] text-2xl font-bold">Get started</h3>
-    <h3 class="sm: p-[10px] ml-[170px] text-2xl ">© 2025  ·  All rights reserved</h3>
-    <img class="sm: ml-[30px] w-[600px] " src="img/imgFooter.svg" alt="imgFooter">
-    <h1 class="sm: ml-[20px] text-9xl ">Aetherfield</h1>
+    <div class="sm: w-[400px] md:w-[750px]  p-[30px] border-t-2 border-gray-400 mt-[30px] md:flex">
+      <img src="img/imgSection4.2.svg" alt="imgSection4">
+      <div>
+        <h3 class="sm: p-[10px] text-xl font-bold">Sustainability Isn’t a Side Project: Making Impact Operationa</h3>
+        <h3 class="sm: p-[10px] text-1xl text-gray-400">Strategy 7 min</h3>
+      </div>
+
+    </div>
+    <div class="sm: w-[400px] md:w-[750px] p-[30px] border-t-2 border-gray-400 mt-[30px] md:flex">
+      <img src="img/imgSection4.3.svg" alt="imgSection4">
+      <div>
+        <h3 class="sm: p-[10px] text-xl font-bold">Inside the Aetherfield Model: How We Turn Data Into Action</h3>
+        <h3 class="sm: p-[10px] text-1xl text-gray-400">Insights 5 min</h3>
+      </div>
+
+    </div>
+    <button
+      class="sm: w-[350px] md:w-[200px] h-[40px] mt-[30px] m-[150px] text-1xl text-center bg-black text-white font-bold">View
+      all articles</button>
+
+  </section>
+
+  <section class="flex flex-col items-center justify-center gap-4 mb-[50px] px-4">
+    <div
+      class="flex flex-col md:flex-row gap-6 md:gap-[20px] items-center justify-center max-w-[1000px] mx-auto w-full">
+
+      <img class="w-[300px]" src="img/imgSectin5.svg" alt="imgSectin5">
+
+      <div class="flex flex-col sm:ml-[50px]">
+        <img class="mt-6 w-[50px]" src="img/iconoSection5.svg" alt="iconoSection5">
+
+        <h3 class="mt-4 text-3xl font-bold">
+          We finally moved past spreadsheets and guesswork.
+          Now we have real data to guide real decisions.
+        </h3>
+
+        <h3 class="mt-2 text-2xl font-bold">
+          Elliot Williams
+        </h3>
+
+        <h3 class="mt-1 text-2xl text-gray-500">
+          Head of Sustainability, Flux Materials
+        </h3>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <section class="bg-gray-200 justify-center items-center flex flex-col gap-4">
+    <h3 class="sm: p-[10px] mt-[50px]  w-[500px] text-3xl font-bold text-center">Ready to operationalize your
+      sustainability goals?</h3>
+    <button
+      class="sm: w-[250px] h-[70px] mt-[30px] mb-[50px] mx-[190px] text-1xl text-center bg-black text-white font-bold">Request
+      a demo</button>
+  </section>
+
+  <footer class="bg-amber-400 opacity-70 justify-center items-center flex flex-col gap-4">
+    <div class="md:flex">
+      <div class="flex ">
+        <h3 class="sm:p-[10px]  text-2xl font-bold">Product</h3>
+        <h3 class="sm: p-[10px]  text-2xl font-bold">Journa</h3>
+        <h3 class="sm: p-[10px]  text-2xl font-bold">About</h3>
+        <h3 class="sm: p-[10px]  text-2xl font-bold">Careers</h3>
+      </div>
+      <h3 class="sm: p-[10px]  text-2xl font-bold">Get started</h3>
+      <h3 class="sm: p-[10px]  text-2xl ">© 2025 · All rights reserved</h3>
+    </div>
+
+    <img class="sm:  w-[600px] md:w-[800px]" src="img/imgFooter.svg" alt="imgFooter">
+    <h1 class="sm:  text-9xl ">Aetherfield</h1>
 
   </footer>
 
