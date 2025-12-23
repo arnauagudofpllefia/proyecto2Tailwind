@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm: '600px',
+                    md: '800px',
+                    lg: '1280px',
+                    xl: '1400px',
+                }
+            }
+        }
+    </script>
+
+    <title>Journal</title>
+</head>
+
+<body>
+    <section class="p-8">
+        <header class="flex items-center justify-between max-w-7xl mx-auto px-4">
+            <h1 class="text-2xl font-bold">Aetherfield</h1>
+            <img src="img/mas.svg" alt="menu" class="w-6 sm:w-8 md:hidden">
+            <div class="flex sm:hidden md:block ">
+                <nav class="">
+                    <a class="font-bold pl-2" href="index.html">Product</a>
+                    <a class="font-bold pl-2" href="journal.html">Journal</a>
+                    <a class="font-bold pl-2" href="about.html">About</a>
+                    <a class="font-bold pl-2" href="careers.html">Careers</a>
+                    <a class="font-bold pl-2" href="https://www.figma.com/es-es/sites/">Get Started-></a>
+                </nav>
+            </div>
+        </header>
+        <section class="sm:mt-[20px] justify-center items-center flex flex-col gap-4">
+            <img class="w-[700px] mt-7" src="img/headerJournal.svg" alt="headerJournal">
+            <h1 class="text-3xl font-bold mt-[20px]">Latest Articles</h1>
+
+            <div class="flex flex-col mt-[50px]">
+                <img src="img/imgSection4.svg" alt="imgSection4">
+                <h2 class="text-2xl font-bold mt-4">
+                    How to Build a Climate-Ready Data Stack
+                </h2>
+                <h4 class="text-xl text-gray-500">Insights · 4 min</h4>
+                <h3 class="text-2xl mt-7">
+                    A practical guide for sustainability teams on integrating emissions, waste, and energy data into
+                    modern workflows.
+                </h3>
+            </div>
+
+            <div class="flex flex-col mt-[50px]">
+                <img src="img/imgTronco.svg" alt="imgTronco">
+                <h2 class="text-2xl font-bold mt-4">
+                    Sustainability Isn’t a Side Project: Making Impact Operational
+                </h2>
+                <h4 class="text-xl text-gray-500">Strategy · 7 min</h4>
+                <h3 class="text-2xl mt-7">
+                    Why climate goals belong in your core roadmap—not just in the annual ESG report.
+                </h3>
+            </div>
+
+            <div class="flex flex-col mt-[50px]">
+                <img src="img/imgInside.svg" alt="imgInside">
+                <h2 class="text-2xl font-bold mt-4">
+                    Inside the Aetherfield Model: How We Turn Data Into Action
+                </h2>
+                <h4 class="text-xl text-gray-500">Insights · 5 min</h4>
+                <h3 class="text-2xl mt-7">
+                    A behind-the-scenes look at our platform logic, system architecture, and sustainability reasoning.
+                </h3>
+            </div>
+
+            <div class="flex flex-col mt-[50px]">
+                <img src="img/montana.svg" alt="montana">
+                <h2 class="text-2xl font-bold mt-4">
+                    Carbon Accounting: Myths, Models, and Must-Haves
+                </h2>
+                <h4 class="text-xl text-gray-500">Tooling · 6 min</h4>
+                <h3 class="text-2xl mt-7">
+                    Debunking common assumptions and offering a framework for getting it right.
+                </h3>
+            </div>
+
+            <div class="flex flex-col mt-[50px]">
+                <img src="img/cuadrado.svg" alt="cuadrado">
+                <h2 class="text-2xl font-bold mt-4">
+                    Seeing Clearly: Designing Feedback Loops for Sustainable Growth
+                </h2>
+                <h4 class="text-xl text-gray-500">Strategy · 4 min</h4>
+                <h3 class="text-2xl mt-7">
+                    Building responsive systems that keep sustainability strategy adaptive and actionable.
+                </h3>
+            </div>
+        </section>
+
+        <section class="sm:mt-[150px] justify-center items-center flex flex-col gap-4 bg-gray-300 -mx-10">
+            <h1 class="text-3xl font-bold text-center mt-[120px]">Subscribe to Aetherfield Journal</h1>
+            <button
+                class="sm: w-[350px] md:w-[200px] h-[70px] mt-[30px] m-[150px] text-2xl text-center bg-black text-white font-bold">Sign
+                up to newsletter</button>
+        </section>
+
+    </section>
+    <footer class="bg-amber-400 opacity-70 justify-center items-center flex flex-col gap-4 -mx-10 -mt-8">
+        <div class="md:flex lg:justify-between">
+            <div class="flex ">
+                <h3 class="sm:p-[10px]  text-2xl font-bold">Product</h3>
+                <h3 class="sm: p-[10px]  text-2xl font-bold">Journa</h3>
+                <h3 class="sm: p-[10px]  text-2xl font-bold">About</h3>
+                <h3 class="sm: p-[10px]  text-2xl font-bold">Careers</h3>
+            </div>
+            <h3 class="sm: p-[10px]  text-2xl font-bold">Get started</h3>
+            <h3 class="sm: p-[10px]  text-2xl ">© 2025 · All rights reserved</h3>
+        </div>
+
+        <img class="sm:  w-[600px] md:w-[800px] lg:w-[1500px] lg:h-[400px]" src="img/imgFooter.svg" alt="imgFooter">
+        <h1 class="sm:  text-9xl ">Aetherfield</h1>
+
+    </footer>
+
+</body>
+
+</html>
